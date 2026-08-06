@@ -61,13 +61,13 @@ Five-page Power BI report. Full-size images in [`powerbi/screenshots/`](powerbi/
 
 | Stage | Output |
 |---|---|
-| **1. Discovery & analysis** | Problem statement, stakeholder map, discovery questions, business questions → [`ba-documents/`](ba-documents/) |
+| **1. Discovery & analysis** | Problem statement, stakeholder map, discovery questions → [`problem_statement.md`](problem_statement.md), [`ba-documents/`](ba-documents/) |
 | **2. Data design** | 8-table relational model with deliberate real-world data quality faults → [`data/data_dictionary.md`](data/data_dictionary.md), [`ba-documents/erd.dbml`](ba-documents/erd.dbml) |
 | **3. Cleaning** | Orphan, impossible-value and completeness checks; bad records quarantined into exceptions tables, never deleted → [`sql/cleaning_queries.sql`](sql/cleaning_queries.sql) |
 | **4. Database** | Normalised PostgreSQL schema with constraints → [`sql/create_tables.sql`](sql/create_tables.sql), [`sql/import_log.md`](sql/import_log.md) |
 | **5. Analysis** | Expiry risk, supplier quality, complaint patterns, recall traceability → [`sql/analysis_queries.sql`](sql/analysis_queries.sql), [`sql/recall_traceability_query.sql`](sql/recall_traceability_query.sql) |
 | **6. Dashboard** | 5-page Power BI report → [`powerbi/`](powerbi/) |
-| **7. Communication** | 15-page insights report + 9 prioritised recommendations → [`report/FreshRoute_Final_Insights_Report.docx`](report/FreshRoute_Final_Insights_Report.docx), [`ba-documents/09_recommendations.md`](ba-documents/09_recommendations.md) |
+| **7. Communication** | 15-page insights report + 9 prioritised recommendations → [`report/FreshRoute_Final_Insights_Report.docx`](report/FreshRoute_Final_Insights_Report.docx), [`recommendations.md`](recommendations.md) |
 
 **Tools:** Excel, PostgreSQL, Power BI (DAX), Python (data generation), Markdown.
 
@@ -85,15 +85,11 @@ Five-page Power BI report. Full-size images in [`powerbi/screenshots/`](powerbi/
 ├── final_insights_report.md       Final 15-page insights report
 │
 ├── ba-documents/                  BA document pack, numbered in reading order
-│   ├── 01_problem_statement.md
 │   ├── 02_stakeholder_map.md
 │   ├── 03_discovery_questions.md
-│   ├── 04_business_questions.md
 │   ├── 05_business_requirements.md
-│   ├── 06_user_stories.md
 │   ├── 07_acceptance_criteria.md
 │   ├── 08_assumptions_risks_constraints.md
-│   ├── 09_recommendations.md
 │   ├── erd.dbml                   Entity relationship model (dbdiagram.io)
 │   └── erd_diagram.png
 │
@@ -104,7 +100,7 @@ Five-page Power BI report. Full-size images in [`powerbi/screenshots/`](powerbi/
 │   └── cleaned/                   Cleaned tables + exceptions tables
 │
 ├── sql/                           Schema, cleaning, analysis, traceability queries
-├── powerbi/                       Requirements, DAX measures, model review, screenshots
+├── powerbi/                       Dashboard requirements and page screenshots
 └── report/                        Final report (Word + PDF)
 ```
 
@@ -116,7 +112,7 @@ If you have five minutes, read the [headline results](#headline-results) above a
 
 If you have twenty, read the final report — [Word version](report/FreshRoute_Final_Insights_Report.docx) (formatted, with figures) or [`final_insights_report.md`](final_insights_report.md) (plain text) — particularly Section 2 (data quality) and Section 6 (the recall test).
 
-If you want the BA thinking, start at [`ba-documents/01_problem_statement.md`](ba-documents/01_problem_statement.md) and read through in number order.
+If you want the BA thinking, start at [`problem_statement.md`](problem_statement.md), then read [`ba-documents/`](ba-documents/) in number order.
 
 ---
 
@@ -136,7 +132,7 @@ These matter more to me than the headline numbers, and they are stated in full i
 
 The dataset was designed with the data quality faults I wanted to find, which is circular — with real data I would not have known where to look. The more useful skill was deciding what to do with broken records, and quarantining rather than deleting was the decision I would defend.
 
-I would also validate the batch risk scoring model against real outcomes before recommending adoption. It is currently calibrated on judgement, which is why [`ba-documents/09_recommendations.md`](ba-documents/09_recommendations.md) recommends formally recalibrating it rather than trusting it as-is.
+I would also validate the batch risk scoring model against real outcomes before recommending adoption. It is currently calibrated on judgement, which is why [`recommendations.md`](recommendations.md) recommends formally recalibrating it rather than trusting it as-is.
 
 ---
 

@@ -10,4 +10,4 @@ One PNG per page of the Power BI report, exported 5 August 2026. All figures are
 | `04_recall_traceability.png` | Recall Traceability |
 | `05_customer_complaints.png` | Customer Complaints |
 
-Page specifications are in [`../dashboard_requirements.md`](../dashboard_requirements.md); the measures behind the KPIs are in [`../dax_measures.md`](../dax_measures.md); modelling decisions are in [`../model_review.md`](../model_review.md).
+Page specifications are in [`../dashboard_requirements.md`](../dashboard_requirements.md).
