@@ -22,7 +22,7 @@
 <!-- Your one-page briefing from mock_recall_scenario.md — include time taken vs the 6.5-hour baseline -->
 
 ## 7. Recommendations summary
-<!-- Cross-reference ba-documents/recommendations.md; top 3 only here -->
+<!-- Cross-reference ba-documents/09_recommendations.md; top 3 only here -->
 
 ## 8. Limitations & honesty notes
 <!-- Simulated data caveats; untraceable orders; assumptions made. This section builds credibility — don't skip it -->

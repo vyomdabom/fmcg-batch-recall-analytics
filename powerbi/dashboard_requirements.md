@@ -1,6 +1,6 @@
 # Power BI Dashboard Requirements
 
-> Requirements only — visual choices, layout, DAX, and the data model are yours. Wireframe each page (see `ba-documents/ba_documentation_tasks.md` #11) before building. Global: consistent slicers (product, supplier, customer type, region, expiry window, risk level), a data-refresh date stamp, and sensible handling of records with missing batch IDs (surface them — don't hide them).
+> Requirements only — visual choices, layout, DAX, and the data model are yours. Wireframe each page before building. Global: consistent slicers (product, supplier, customer type, region, expiry window, risk level), a data-refresh date stamp, and sensible handling of records with missing batch IDs (surface them — don't hide them).
 
 ## Page 1 — Executive Overview
 
@@ -39,4 +39,4 @@
 
 ## Acceptance (tie back to user stories)
 
-Each page should satisfy the relevant acceptance criteria in `ba-documents/acceptance_criteria.md`. Screenshot every finished page into `powerbi/screenshots/` for the README.
+Each page should satisfy the relevant acceptance criteria in `ba-documents/07_acceptance_criteria.md`. Screenshot every finished page into `powerbi/screenshots/` for the README.

@@ -275,4 +275,4 @@ Set these once in **Measure tools** and they apply everywhere:
 - **Batch B-0011** has `quantity_received` of −120.
 - **Five batches** have `quantity_remaining` greater than `quantity_received`.
 - **Supplier attribution** covers only complaints that have a batch link (~54%).
-- **Synthetic-data limits** (D1–D3) are recorded in `ba-documents/assumptions_risks_constraints.md` — stock reconciliation and dispatch-vs-manufacture checks are not meaningful on this dataset.
+- **Synthetic-data limits** (D1–D3) are recorded in `ba-documents/08_assumptions_risks_constraints.md` — stock reconciliation and dispatch-vs-manufacture checks are not meaningful on this dataset.

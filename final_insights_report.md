@@ -196,7 +196,7 @@ Auckland and Canterbury together account for 378 of 534 units, or 71% of the dis
 
 ## 7. Recommendations summary
 
-Full recommendations are set out in `ba-documents/recommendations.md`. The three with the greatest impact relative to effort are below.
+Full recommendations are set out in [`ba-documents/09_recommendations.md`](ba-documents/09_recommendations.md). The three with the greatest impact relative to effort are below.
 
 **1. Make batch identifier mandatory at order entry and complaint logging.** This is the single highest value change. At present 17.6% of orders and 46% of complaints carry no batch link, which is the direct cause of both the 6.5 hour recall trace and the inability to attribute complaints to suppliers. Without it, every other measure in this report understates reality. Making the field mandatory at the point of capture, rather than attempting retrospective correction, closes the gap going forward at minimal cost.
 
