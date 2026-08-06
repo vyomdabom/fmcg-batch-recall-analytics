@@ -67,7 +67,7 @@ Five-page Power BI report. Full-size images in [`powerbi/screenshots/`](powerbi/
 | **4. Database** | Normalised PostgreSQL schema with constraints → [`sql/create_tables.sql`](sql/create_tables.sql), [`sql/import_log.md`](sql/import_log.md) |
 | **5. Analysis** | Expiry risk, supplier quality, complaint patterns, recall traceability → [`sql/analysis_queries.sql`](sql/analysis_queries.sql), [`sql/recall_traceability_query.sql`](sql/recall_traceability_query.sql) |
 | **6. Dashboard** | 5-page Power BI report → [`powerbi/`](powerbi/) |
-| **7. Communication** | 15-page insights report + 9 prioritised recommendations → [`final_insights_report.md`](final_insights_report.md), [`ba-documents/09_recommendations.md`](ba-documents/09_recommendations.md) |
+| **7. Communication** | 15-page insights report + 9 prioritised recommendations → [`report/FreshRoute_Final_Insights_Report.docx`](report/FreshRoute_Final_Insights_Report.docx), [`ba-documents/09_recommendations.md`](ba-documents/09_recommendations.md) |
 
 **Tools:** Excel, PostgreSQL, Power BI (DAX), Python (data generation), Markdown.
 
@@ -114,7 +114,7 @@ Five-page Power BI report. Full-size images in [`powerbi/screenshots/`](powerbi/
 
 If you have five minutes, read the [headline results](#headline-results) above and look at the [Recall Traceability page](powerbi/screenshots/04_recall_traceability.png).
 
-If you have twenty, read [`final_insights_report.md`](final_insights_report.md) — particularly Section 2 (data quality) and Section 6 (the recall test).
+If you have twenty, read the final report — [Word version](report/FreshRoute_Final_Insights_Report.docx) (formatted, with figures) or [`final_insights_report.md`](final_insights_report.md) (plain text) — particularly Section 2 (data quality) and Section 6 (the recall test).
 
 If you want the BA thinking, start at [`ba-documents/01_problem_statement.md`](ba-documents/01_problem_statement.md) and read through in number order.
 
