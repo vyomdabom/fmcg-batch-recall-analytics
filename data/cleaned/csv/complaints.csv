@@ -1,0 +1,101 @@
+complaint_id,customer_id,product_id,batch_id,complaint_date,complaint_type,severity,complaint_status,resolution_days
+CMP-001,C-017,P-003,B-0293,2026-06-26,Wrong item,Critical,Resolved,
+CMP-002,C-032,P-016,,2025-05-12,Short dated,Low,Resolved,13
+CMP-003,C-020,P-003,,2026-01-16,Foreign object,Medium,Resolved,18
+CMP-004,C-032,P-046,,2025-09-10,Temperature,Medium,Resolved,
+CMP-005,C-006,P-026,B-0284,2025-06-18,Foreign object,Low,Resolved,3
+CMP-006,C-025,P-018,B-0057,2026-02-09,Foreign object,Critical,Open,
+CMP-007,C-068,P-048,,2025-03-01,Short dated,Medium,Resolved,
+CMP-008,C-032,,,2025-09-21,Foreign object,High,Closed,19
+CMP-009,C-067,P-022,B-0170,2026-07-03,Short dated,Medium,In progress,
+CMP-010,C-038,P-032,B-0183,2025-06-08,Temperature,Medium,Open,
+CMP-011,C-004,P-048,B-0282,2026-05-24,Packaging,High,Resolved,15
+CMP-012,C-038,P-032,B-0183,2026-05-25,Packaging,Critical,Closed,19
+CMP-013,C-032,P-033,,2025-08-02,Wrong item,High,Resolved,19
+CMP-014,C-019,P-034,,2026-05-19,Temperature,High,Resolved,9
+CMP-015,C-026,P-027,B-0032,2026-06-23,Short dated,Critical,In progress,
+CMP-016,C-031,P-050,B-0114,2025-12-12,Packaging,Medium,Resolved,17
+CMP-017,C-059,P-036,,2025-02-20,Taste/Quality,High,Resolved,5
+CMP-018,C-019,P-031,B-0239,2025-02-10,Short dated,High,Resolved,14
+CMP-019,C-035,P-050,,2025-06-22,Temperature,Medium,In progress,
+CMP-020,C-001,P-003,,2025-04-28,Foreign object,Medium,Closed,9
+CMP-021,C-023,P-006,B-0168,2025-05-28,Short dated,High,Closed,-3
+CMP-022,C-014,P-008,,2025-02-14,Packaging,Medium,Closed,21
+CMP-023,C-038,P-050,B-0114,2025-07-11,Wrong item,Medium,Resolved,10
+CMP-024,C-043,P-024,,2026-04-04,Taste/Quality,Medium,Closed,16
+CMP-025,C-034,P-049,,2026-04-18,Packaging,Medium,Closed,6
+CMP-026,C-055,P-018,,2025-02-17,Packaging,Medium,Resolved,
+CMP-027,C-026,P-006,B-0275,2026-05-09,Packaging,Medium,Resolved,8
+CMP-028,C-036,P-030,,2025-10-13,Short dated,High,In progress,
+CMP-029,C-026,P-018,,2025-11-02,Short dated,High,Open,
+CMP-030,C-004,P-048,B-0282,2025-11-11,Taste/Quality,High,Resolved,7
+CMP-031,C-027,P-011,B-0298,2025-09-16,Foreign object,Medium,Resolved,7
+CMP-032,C-016,P-026,B-0212,2026-01-15,Packaging,High,Resolved,
+CMP-033,C-067,P-033,B-0216,2025-02-23,Taste/Quality,Medium,Resolved,18
+CMP-034,C-019,P-011,,2026-03-17,Taste/Quality,Medium,Open,
+CMP-035,C-039,P-033,B-0216,2025-12-30,Packaging,Medium,Resolved,
+CMP-036,C-059,P-028,,2025-12-04,Short dated,Low,Open,
+CMP-037,C-069,P-044,,2025-12-26,Short dated,Low,Resolved,2
+CMP-038,C-002,P-016,B-0145,2025-09-17,Foreign object,Low,Closed,10
+CMP-039,C-057,P-033,B-0236,2026-06-25,Taste/Quality,High,Closed,11
+CMP-040,C-029,P-019,,2025-06-15,Short dated,Medium,Open,
+CMP-041,C-034,P-047,B-0121,2025-04-18,Taste/Quality,High,Closed,18
+CMP-042,C-018,P-049,,2025-04-16,Wrong item,Critical,Resolved,10
+CMP-043,C-023,P-031,B-0192,2026-05-03,Temperature,Low,Resolved,3
+CMP-044,C-048,P-051,,2025-03-11,Taste/Quality,Critical,Open,
+CMP-045,C-017,P-046,B-0122,2025-07-03,Short dated,Critical,Resolved,17
+CMP-046,C-022,P-007,,2026-03-03,Temperature,Critical,Open,
+CMP-047,C-060,P-014,,2025-05-02,Temperature,High,Resolved,12
+CMP-048,C-001,P-016,,2026-03-17,Taste/Quality,Critical,Closed,18
+CMP-049,C-002,P-037,,2025-07-11,Wrong item,Medium,Closed,21
+CMP-050,C-063,P-025,B-0294,2025-09-04,Temperature,Medium,Resolved,
+CMP-051,C-017,P-046,,2026-03-17,Short dated,Medium,Resolved,17
+CMP-052,C-028,P-009,B-0199,2025-08-29,Temperature,Critical,Resolved,3
+CMP-053,C-026,P-034,,2026-05-07,Taste/Quality,Medium,Resolved,18
+CMP-054,C-070,P-006,B-0250,2026-02-10,Wrong item,High,Closed,7
+CMP-055,C-066,,B-0199,2025-07-01,Short dated,Medium,Open,
+CMP-056,C-052,,,2026-05-27,Foreign object,Low,Closed,16
+CMP-057,C-052,P-045,B-0289,2025-07-15,Packaging,Critical,Closed,4
+CMP-058,C-052,P-016,,2025-06-22,Short dated,Medium,Open,
+CMP-059,C-056,P-028,B-0061,2025-03-05,Short dated,Critical,Resolved,2
+CMP-060,C-063,P-025,B-0294,2025-10-01,Packaging,Medium,Resolved,
+CMP-061,C-039,P-002,,2025-09-14,Temperature,Medium,Closed,
+CMP-062,C-032,P-016,B-0145,2026-06-19,Packaging,High,Closed,
+CMP-063,C-029,P-042,B-0063,2026-03-04,Short dated,Medium,In progress,
+CMP-064,C-011,P-050,B-0027,2026-01-11,Packaging,Low,In progress,
+CMP-065,C-041,,B-0298,2025-09-18,Taste/Quality,Medium,Closed,10
+CMP-066,C-043,P-020,,2025-04-22,Taste/Quality,High,Resolved,17
+CMP-067,C-029,P-040,,2026-01-11,Taste/Quality,Medium,Open,
+CMP-068,C-011,P-027,B-0032,2025-06-11,Packaging,High,Resolved,18
+CMP-069,C-065,P-018,B-0133,2026-01-01,Packaging,Medium,In progress,
+CMP-070,C-020,P-013,B-0085,2025-07-10,Temperature,High,Open,
+CMP-071,C-049,P-022,B-0259,2026-03-10,Short dated,Low,In progress,
+CMP-072,C-036,,,2025-04-17,Taste/Quality,Medium,Closed,4
+CMP-073,C-016,P-034,B-0086,2025-06-05,Taste/Quality,High,Resolved,8
+CMP-074,C-032,P-029,B-0222,2025-06-08,Wrong item,Critical,Closed,19
+CMP-075,C-006,P-015,B-0006,2025-06-27,Taste/Quality,Medium,Closed,16
+CMP-076,C-018,P-031,,2025-04-22,Wrong item,Low,Resolved,7
+CMP-077,C-062,P-023,,2025-02-10,Wrong item,Low,Open,
+CMP-078,C-060,P-043,,2025-02-03,Short dated,High,Resolved,
+CMP-079,C-052,P-005,,2025-12-01,Short dated,High,Resolved,17
+CMP-080,C-014,P-040,B-0211,2025-12-20,Packaging,Low,Resolved,5
+CMP-081,C-063,P-049,B-0129,2025-09-08,Taste/Quality,High,Closed,15
+CMP-082,C-070,P-031,B-0192,2025-10-11,Short dated,Medium,Resolved,8
+CMP-083,C-069,P-048,B-0174,2025-05-02,Wrong item,High,Closed,1
+CMP-084,C-051,P-006,,2026-01-23,Short dated,Critical,Resolved,13
+CMP-085,C-012,P-049,,2025-11-30,Packaging,High,Resolved,4
+CMP-086,C-004,P-029,,2026-03-17,Packaging,High,Resolved,10
+CMP-087,C-032,P-049,,2025-04-13,Foreign object,Low,Resolved,21
+CMP-088,C-013,P-010,,2025-04-15,Taste/Quality,High,Resolved,8
+CMP-089,C-007,P-024,B-0274,2025-05-17,Taste/Quality,Low,Open,
+CMP-090,C-049,P-003,,2025-02-25,Short dated,Medium,In progress,
+CMP-091,C-013,P-041,B-0266,2026-04-10,Short dated,Medium,Resolved,8
+CMP-092,C-058,P-041,B-0266,2025-09-23,Taste/Quality,Low,Resolved,4
+CMP-093,C-033,P-028,B-0061,2025-08-04,Foreign object,Critical,Resolved,13
+CMP-094,C-043,P-003,B-0207,2026-05-14,Packaging,High,Resolved,15
+CMP-095,C-068,P-048,B-0174,2025-07-06,Temperature,High,Open,
+CMP-096,C-054,P-001,B-0110,2026-01-04,Short dated,High,Open,
+CMP-097,C-051,P-017,,2025-05-06,Foreign object,High,Resolved,3
+CMP-098,C-046,P-040,B-0011,2026-04-27,Packaging,Medium,Open,
+CMP-099,C-049,P-001,B-0187,2026-07-06,Taste/Quality,Medium,Open,
+CMP-100,C-001,P-001,,2026-07-08,Temperature,High,Open,

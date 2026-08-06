@@ -1,0 +1,64 @@
+document_id,supplier_id,document_type,issue_date,expiry_date,document_status,related_category
+DOC-001,S-01,Temperature Declaration,2025-08-04,2026-04-08,Expired,Dairy
+DOC-002,S-01,Food Safety Audit,2025-06-29,2026-06-29,Expired,Dairy
+DOC-003,S-01,HACCP Certificate,2023-12-26,,Expired,Dairy
+DOC-004,S-01,Insurance Certificate,2024-09-15,2026-09-15,Valid,Dairy
+DOC-005,S-02,Product Specification,2025-03-21,2026-03-21,Expired,Packaged
+DOC-006,S-02,Temperature Declaration,2023-06-15,2024-06-14,Expired,Packaged
+DOC-007,S-02,Insurance Certificate,2023-10-30,2024-10-29,,Packaged
+DOC-008,S-02,HACCP Certificate,2023-11-15,2024-11-14,Expired,Packaged
+DOC-009,S-02,Food Safety Audit,2024-06-30,2026-06-30,Expired,Packaged
+DOC-010,S-03,Temperature Declaration,2024-08-20,2025-08-20,,Packaged
+DOC-011,S-03,Product Specification,2024-10-14,2025-02-10,Expired,Packaged
+DOC-012,S-03,Food Safety Audit,2023-10-26,2025-10-25,Expired,Packaged
+DOC-013,S-03,HACCP Certificate,2025-08-23,2026-08-23,Valid,Packaged
+DOC-014,S-03,Insurance Certificate,2023-07-30,2024-07-29,Expired,Packaged
+DOC-015,S-04,Food Safety Audit,2026-01-03,2027-01-03,Valid,Health
+DOC-016,S-04,Insurance Certificate,2024-09-10,2026-09-10,Valid,Health
+DOC-017,S-04,Product Specification,2025-09-01,2026-09-01,Valid,Health
+DOC-018,S-04,HACCP Certificate,2025-03-19,2026-03-19,Expired,Health
+DOC-019,S-04,Temperature Declaration,2024-12-22,2025-12-22,Expired,Health
+DOC-020,S-05,HACCP Certificate,2024-08-26,2025-08-26,Expired,Chilled Drinks
+DOC-021,S-05,Insurance Certificate,2023-11-22,2024-11-21,Expired,Chilled Drinks
+DOC-022,S-05,Temperature Declaration,2025-04-08,,Valid,Chilled Drinks
+DOC-023,S-06,Temperature Declaration,2023-07-03,2025-07-02,Expired,Packaged
+DOC-024,S-06,HACCP Certificate,2025-08-21,2026-08-21,Valid,Packaged
+DOC-025,S-06,Insurance Certificate,2023-06-14,2024-06-13,Expired,Packaged
+DOC-026,S-06,Product Specification,2024-09-08,2025-02-10,Expired,Packaged
+DOC-027,S-07,HACCP Certificate,2025-12-11,2026-11-12,Valid,Dairy
+DOC-028,S-07,Product Specification,2025-12-20,2026-12-20,Valid,Dairy
+DOC-029,S-07,Temperature Declaration,2025-10-30,2026-10-30,Valid,Dairy
+DOC-030,S-07,Insurance Certificate,2023-08-02,2024-08-01,Expired,Dairy
+DOC-031,S-08,Temperature Declaration,2024-10-30,2026-10-30,Valid,Protein Bars
+DOC-032,S-08,Food Safety Audit,2023-08-20,2024-08-19,Expired,Protein Bars
+DOC-033,S-08,Insurance Certificate,2025-05-24,,Expired,Protein Bars
+DOC-034,S-09,Product Specification,2026-01-18,2027-01-18,Valid,Dairy
+DOC-035,S-09,HACCP Certificate,2024-08-02,2026-08-02,Valid,Dairy
+DOC-036,S-09,Insurance Certificate,2023-07-10,2025-02-10,Expired,Dairy
+DOC-037,S-09,Food Safety Audit,2024-11-06,,Valid,Dairy
+DOC-038,S-09,Temperature Declaration,2024-08-03,,,Dairy
+DOC-039,S-10,Temperature Declaration,2024-03-18,2026-03-18,Expired,Chilled Drinks
+DOC-040,S-10,Food Safety Audit,2024-03-16,2026-03-16,,Chilled Drinks
+DOC-041,S-10,HACCP Certificate,2025-10-21,,Valid,Chilled Drinks
+DOC-042,S-10,Insurance Certificate,2024-07-27,,Expired,Chilled Drinks
+DOC-043,S-10,Product Specification,2023-12-21,2024-12-20,Expired,Chilled Drinks
+DOC-044,S-11,HACCP Certificate,2026-02-28,2027-02-28,Valid,Chilled Drinks
+DOC-045,S-11,Temperature Declaration,2024-02-21,2025-02-20,Expired,Chilled Drinks
+DOC-046,S-11,Food Safety Audit,2025-09-13,2027-09-13,Valid,Chilled Drinks
+DOC-047,S-11,Product Specification,2024-04-28,2026-04-28,Expired,Chilled Drinks
+DOC-048,S-12,HACCP Certificate,2025-11-28,2027-11-28,Valid,Sauces
+DOC-049,S-12,Insurance Certificate,2025-02-16,2026-02-16,Expired,Sauces
+DOC-050,S-12,Product Specification,2023-09-04,2024-09-03,Expired,Sauces
+DOC-051,S-12,Temperature Declaration,2024-06-06,2025-06-06,Expired,Sauces
+DOC-052,S-12,Food Safety Audit,2023-07-09,2024-07-08,,Sauces
+DOC-053,S-13,Product Specification,2025-02-23,2026-02-23,Expired,Protein Bars
+DOC-054,S-13,HACCP Certificate,2025-06-16,2027-06-16,Valid,Protein Bars
+DOC-055,S-13,Insurance Certificate,2025-11-28,2026-11-28,Valid,Protein Bars
+DOC-056,S-13,Food Safety Audit,2024-08-31,2025-08-31,Expired,Protein Bars
+DOC-057,S-13,Temperature Declaration,2023-12-31,2024-12-30,Expired,Protein Bars
+DOC-058,S-14,Product Specification,2024-06-06,2025-06-06,Expired,Health
+DOC-059,S-14,HACCP Certificate,2024-07-05,2025-07-05,Expired,Health
+DOC-060,S-14,Temperature Declaration,2024-09-08,2025-09-08,Expired,Health
+DOC-061,S-14,Food Safety Audit,2026-02-06,2028-02-06,Valid,Health
+DOC-062,S-14,Insurance Certificate,2023-09-08,2024-09-07,Expired,Health
+DOC-063,S-01,Temperature Declaration,2024-05-20,2025-05-20,Expired,Dairy

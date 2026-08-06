@@ -1,0 +1,15 @@
+supplier_id,supplier_name,country,supplier_rating,main_category,last_audit_date,certification_status
+S-01,Meadow Valley Dairy Ltd,Australia,3,Dairy,2025-06-13,Certified
+S-02,Southern Fine Foods,New Zealand,4,Packaged,2025-09-05,Certified
+S-03,Pacific Beverage Co,New Zealand,,Packaged,2025-09-20,Certified
+S-04,Auckland Frozen Foods,New Zealand,3,Health,2024-07-12,Pending
+S-05,GrainWorks NZ,New Zealand,5,Chilled Drinks,,Certified
+S-06,Sunrise Snacks Ltd,New Zealand,0,Packaged,2024-02-04,Pending
+S-07,Harvest Sauce Company,New Zealand,5,Dairy,2023-12-31,Pending
+S-08,NutriLife Health Foods,Australia,5,Protein Bars,2024-08-19,Certified
+S-09,Bay Packaging Foods,New Zealand,4,Dairy,,Pending
+S-10,Kereru Organics,New Zealand,6,Chilled Drinks,2025-03-29,Certified
+S-11,TransTasman Imports,New Zealand,5,Chilled Drinks,2025-09-22,Certified
+S-12,Waikato Dairy Collective,New Zealand,5,Sauces,2025-07-27,Certified
+S-13,Golden Coast Trading,New Zealand,5,Protein Bars,2024-07-02,Certified
+S-14,Alpine Provisions,New Zealand,2,Health,2025-12-09,Certified

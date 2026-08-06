@@ -1,0 +1,38 @@
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ---- Microsoft Office lock / temp files ----
+~$*
+*.tmp
+.~lock.*#
+
+# ---- Power BI ----
+*.pbix.tmp
+.pbi/
+*TempState*
+
+# ---- SQL editor scratch files ----
+*.session.sql
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- Editors ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Credentials (never commit) ----
+.env
+*.pgpass
+secrets.*

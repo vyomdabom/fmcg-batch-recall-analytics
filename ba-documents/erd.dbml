@@ -1,0 +1,145 @@
+// FreshRoute Foods — ERD source (paste into dbdiagram.io)
+// Generated from sql/create_tables.sql
+
+Table products {
+  product_id varchar(10) [pk]
+  product_name varchar(100) [not null]
+  product_category varchar(100) [not null]
+  brand varchar(100)
+  storage_type varchar(100) [not null]
+  unit_cost decimal(10,2) [not null]
+  unit_sell_price decimal(10,2) [not null]
+  active_status varchar(20)
+}
+
+Table suppliers {
+  supplier_id varchar(10) [pk]
+  supplier_name varchar(100) [not null]
+  country varchar(20) [not null]
+  supplier_rating numeric(3,1)
+  main_category varchar(50)
+  last_audit_date date
+  certification_status varchar(30)
+}
+
+Table customers {
+  customer_id varchar(10) [pk]
+  customer_name varchar(50) [not null]
+  customer_type varchar(50) [not null]
+  region varchar(50) [not null]
+  contact_person varchar(50)
+  account_status varchar(50)
+}
+
+Table batches {
+  batch_id varchar(10) [pk]
+  product_id varchar(10)
+  supplier_id varchar(10)
+  batch_number varchar(20)
+  manufacture_date date
+  expiry_date date
+  quantity_received integer
+  quantity_remaining integer
+  warehouse_location varchar(10)
+  quality_status varchar(10)
+  document_status varchar(50)
+}
+
+Table orders {
+  order_id varchar(20) [pk]
+  customer_id varchar(10) [not null]
+  order_date date
+  dispatch_date date
+  product_id varchar(20)
+  batch_id varchar(30) [note: 'nullable by design — traceability gap: 17.6% of orders unlinked']
+  quantity_sold integer
+  sales_value decimal(10,2)
+  delivery_region varchar(50)
+}
+
+Table complaints {
+  complaint_id varchar(20) [pk]
+  customer_id varchar(20)
+  product_id varchar(20)
+  batch_id varchar(30) [note: 'nullable by design — 46% of complaints unlinked']
+  complaint_date date
+  complaint_type varchar(100)
+  severity varchar(20)
+  complaint_status varchar(50)
+  resolution_days integer
+}
+
+Table supplier_documents {
+  document_id varchar(30) [pk]
+  supplier_id varchar(30) [not null]
+  document_type varchar(50)
+  issue_date date
+  expiry_date date
+  document_status varchar(30)
+  related_category varchar(50)
+}
+
+Table recall_risk {
+  risk_id varchar(30) [pk]
+  batch_id varchar(30) [not null]
+  risk_reason text
+  risk_level varchar(20)
+  date_identified date
+  action_required text
+  status varchar(30)
+}
+
+Table batches_exceptions {
+  batch_id varchar(10)
+  product_id varchar(10)
+  supplier_id varchar(10)
+  batch_number varchar(20)
+  manufacture_date date
+  expiry_date date
+  quantity_received integer
+  quantity_remaining integer
+  warehouse_location varchar(10)
+  quality_status varchar(10)
+  document_status varchar(50)
+  exception_reason varchar(150)
+}
+
+Table orders_exceptions {
+  order_id varchar(20)
+  customer_id varchar(10)
+  order_date date
+  dispatch_date date
+  product_id varchar(20)
+  batch_id varchar(30)
+  quantity_sold integer
+  sales_value decimal(10,2)
+  delivery_region varchar(50)
+  exception_reason varchar(150)
+}
+
+Table recall_risk_exceptions {
+  risk_id varchar(30)
+  batch_id varchar(30)
+  risk_reason text
+  risk_level varchar(20)
+  date_identified date
+  action_required text
+  status varchar(30)
+  exception_reason varchar(150)
+}
+
+// Relationships (many > one)
+Ref: batches.product_id > products.product_id
+Ref: batches.supplier_id > suppliers.supplier_id
+Ref: orders.customer_id > customers.customer_id
+Ref: orders.product_id > products.product_id
+Ref: orders.batch_id > batches.batch_id
+Ref: complaints.customer_id > customers.customer_id
+Ref: complaints.product_id > products.product_id
+Ref: complaints.batch_id > batches.batch_id
+Ref: supplier_documents.supplier_id > suppliers.supplier_id
+Ref: recall_risk.batch_id > batches.batch_id
+
+// Exceptions tables deliberately have no Refs — they hold quarantined rows
+// (see import_log.md). TODO (yours): add a Note block to each exceptions
+// table explaining the quarantine policy in your own words.

@@ -1,0 +1,71 @@
+customer_id,customer_name,customer_type,region,contact_person,account_status
+C-001,Tawa Kitchen,Restaurant,Auckland,Emma Singh,On hold
+C-002,Addington Foodstore,Small Retailer,Canterbury,Sam Ng,Active
+C-003,Ponsonby Kitchen,Restaurant,Wellington,Emma Ng,Active
+C-004,Ponsonby Foodstore,Small Retailer,Otago,Emma Kaur,Active
+C-005,Mount Espresso Bar,Cafe,Wellington,Nina Ng,Active
+C-006,Fernhill Corner Dairy,Dairy,Wellington,James Patel,Active
+C-007,North End Foodstore,Small Retailer,Waikato,Sarah Patel,Active
+C-008,Riccarton Corner Dairy,Dairy,Wellington,Mei Patel,Active
+C-009,Te Rapa SuperMart,Supermarket,Auckland,James Walker,Active
+C-010,Mount Foodstore,Small Retailer,Canterbury,Sarah Patel,On hold
+C-011,Newtown Foodstore,Small Retailer,Otago,Aroha Ng,Active
+C-012,Fernhill Espresso Bar,Cafe,Otago,James Patel,Closed
+C-013,Greenlane SuperMart,Supermarket,Canterbury,Alex Lee,Active
+C-014,Bayfair SuperMart,Supermarket,Canterbury,Mei Lee,Active
+C-015,Tawa Kitchen,Restaurant,Auckland,,On hold
+C-016,Addington Espresso Bar,Cafe,Canterbury,,Active
+C-017,Newtown Espresso Bar,Cafe,Auckland,Alex Singh,Active
+C-018,Te Rapa SuperMart,Supermarket,Auckland,Aroha Kaur,Active
+C-019,Addington Foodstore,Small Retailer,Canterbury,Sam Singh,Active
+C-020,Papamoa SuperMart,Supermarket,Auckland,Emma Smith,Active
+C-021,Papamoa Foodstore,Small Retailer,Auckland,Sam Kaur,Active
+C-022,Lakeside Kitchen,Restaurant,Canterbury,Sarah Smith,Active
+C-023,Bayfair Foodstore,Small Retailer,Auckland,Sam Kaur,Active
+C-024,Kelburn Espresso Bar,Cafe,Bay of Plenty,Tom Patel,Active
+C-025,Bayfair Kitchen,Restaurant,Canterbury,Nina Singh,Active
+C-026,Harbourview Espresso Bar,Cafe,Waikato,,Active
+C-027,Lakeside SuperMart,Supermarket,Otago,Emma Ng,Active
+C-028,Lakeside Foodstore,Small Retailer,Otago,Sam Kaur,Active
+C-029,Papamoa SuperMart,Supermarket,Bay of Plenty,Kiri Ng,Active
+C-030,North End Espresso Bar,Cafe,Bay of Plenty,Sarah Patel,Active
+C-031,Bayfair Espresso Bar,Cafe,Otago,Mei Patel,Active
+C-032,Ponsonby Corner Dairy,Dairy,Auckland,Emma Ng,Active
+C-033,Karori Espresso Bar,Cafe,Canterbury,Mike Singh,Active
+C-034,Newtown Espresso Bar,Cafe,Auckland,Tom Brown,Active
+C-035,Tawa Corner Dairy,Dairy,Canterbury,James Kaur,Active
+C-036,Ponsonby Espresso Bar,Cafe,Otago,Rawiri Williams,Active
+C-037,Kelburn Espresso Bar,Cafe,Waikato,Tom Ng,Active
+C-038,Kelburn SuperMart,Supermarket,Wellington,Nina Walker,Active
+C-039,Kelburn Espresso Bar,Cafe,Wellington,Aroha Smith,Active
+C-040,Newtown Foodstore,Small Retailer,Otago,Rawiri Brown,Active
+C-041,Harbourview Foodstore,Small Retailer,Auckland,Mei Singh,Active
+C-042,Ponsonby Espresso Bar,Cafe,Wellington,Mei Kaur,Active
+C-043,Lakeside Espresso Bar,Cafe,Otago,Priya Kaur,Active
+C-044,Te Rapa Kitchen,Restaurant,Otago,Priya Smith,Closed
+C-045,Kelburn Foodstore,Small Retailer,Canterbury,Tom Walker,Active
+C-046,Papamoa Corner Dairy,Dairy,Otago,James Kaur,Active
+C-047,Fernhill Espresso Bar,Cafe,Canterbury,Rawiri Ng,Active
+C-048,Dominion Rd SuperMart,Supermarket,Auckland,Dan Singh,Active
+C-049,Sumner Kitchen,Restaurant,Canterbury,Mike Walker,Active
+C-050,Newtown Kitchen,Restaurant,Canterbury,Nina Lee,Active
+C-051,Fernhill Espresso Bar,Cafe,Otago,Mike Patel,Active
+C-052,Sumner Foodstore,Small Retailer,Bay of Plenty,Nina Henare,Active
+C-053,Bayfair Espresso Bar,Cafe,Wellington,,Active
+C-054,Mount Kitchen,Restaurant,Wellington,Dan Singh,Active
+C-055,Te Rapa SuperMart,Supermarket,Wellington,James Kaur,Active
+C-056,Dominion Rd Kitchen,Restaurant,Canterbury,Lucy Patel,Closed
+C-057,Karori Kitchen,Restaurant,Auckland,Dan Brown,Active
+C-058,Karori Kitchen,Restaurant,Canterbury,Aroha Smith,Active
+C-059,Te Rapa Foodstore,Small Retailer,Wellington,James Lee,Active
+C-060,Tawa Kitchen,Restaurant,Auckland,Dan Brown,Active
+C-061,Lakeside SuperMart,Supermarket,Auckland,Nina Ng,Active
+C-062,Addington Corner Dairy,Dairy,Wellington,Dan Lee,Active
+C-063,Remuera Espresso Bar,Cafe,Bay of Plenty,Nina Brown,Active
+C-064,Remuera Espresso Bar,Cafe,Auckland,Lucy Brown,Active
+C-065,Sumner Espresso Bar,Cafe,Auckland,Sarah Walker,Active
+C-066,Papamoa Espresso Bar,Cafe,Auckland,Sam Singh,Active
+C-067,North End Espresso Bar,Cafe,Otago,Lucy Williams,Active
+C-068,Lakeside Kitchen,Restaurant,Waikato,Nina Henare,Active
+C-069,Newtown Corner Dairy,Dairy,Bay of Plenty,,Active
+C-070,Bayfair Corner Dairy,Dairy,Otago,Aroha Smith,Active

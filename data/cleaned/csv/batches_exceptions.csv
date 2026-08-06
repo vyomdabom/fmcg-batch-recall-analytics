@@ -1,0 +1,2 @@
+batch_id,product_id,supplier_id,batch_number,manufacture_date,expiry_date,quantity_received,quantity_remaining,warehouse_location,quality_status,document_status,exception_reason
+B-0041,P-030,S-08,PS-2604-C,2026-12-01,2026-04-30,960,0,A3-C6,,Complete,manufacture date after expiry date (violates chk_batch_dates)

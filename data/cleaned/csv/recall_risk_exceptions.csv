@@ -1,0 +1,2 @@
+risk_id,batch_id,risk_reason,risk_level,date_identified,action_required,status,exception_reason
+RR-006,B-9999,Supplier notice,Medium,2025-09-14,Chase documents,Closed,orphan risk: batch B-9999 not in batches (violates FK)

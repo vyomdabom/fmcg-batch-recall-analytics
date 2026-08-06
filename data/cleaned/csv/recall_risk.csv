@@ -1,0 +1,30 @@
+risk_id,batch_id,risk_reason,risk_level,date_identified,action_required,status
+RR-001,B-0288,Supplier notice,High,2026-01-28,Chase documents,Closed
+RR-002,B-0295,Near expiry,High,2026-02-20,Dispose,Open
+RR-003,B-0003,Near expiry,Medium,2025-11-10,Dispose,Closed
+RR-004,B-0153,Complaint Cluster,Medium,2025-10-23,Chase documents,Closed
+RR-005,B-0159,Complaint Cluster,Low,2026-05-10,Dispose,
+RR-007,B-0153,Near expiry,Medium,2025-12-16,,Open
+RR-008,B-0175,Missing documents,High,2025-11-20,,Closed
+RR-009,B-0028,Near expiry,High,2026-02-24,Chase documents,Closed
+RR-010,B-0161,Near expiry,High,2026-03-23,Chase documents,In progress
+RR-011,B-0283,Temperature excursion,High,2025-10-31,Contact customers,
+RR-012,B-0020,Near expiry,Critical,2025-06-16,,Open
+RR-013,B-0239,Near expiry,High,2025-04-18,Contact customers,In progress
+RR-014,B-0014,Temperature excursion,High,2025-11-16,Contact customers,Open
+RR-015,B-0102,Complaint Cluster,Medium,2025-03-07,Dispose,Closed
+RR-016,B-0175,Missing documents,High,2025-08-18,Contact customers,Open
+RR-017,B-0071,Supplier notice,Medium,2025-06-09,,Closed
+RR-018,B-0170,Temperature excursion,Medium,2026-01-14,,Open
+RR-019,B-0072,Missing documents,Medium,2025-07-16,Monitor,Closed
+RR-020,B-0169,Temperature excursion,High,2025-07-03,Chase documents,Closed
+RR-021,B-0022,Missing documents,Low,2025-03-21,Hold stock,Open
+RR-022,B-0159,Complaint Cluster,Medium,2025-12-14,Monitor,Open
+RR-023,B-0082,Temperature excursion,High,2025-12-14,Hold stock,
+RR-024,B-0076,Near expiry,Critical,2026-03-10,Monitor,In progress
+RR-025,B-0225,Supplier notice,Low,2026-06-07,Dispose,Closed
+RR-026,B-0014,Complaint Cluster,High,2025-07-30,Chase documents,Open
+RR-027,B-0003,Complaint Cluster,Medium,2025-06-09,Dispose,In progress
+RR-028,B-0065,Supplier notice,Medium,2026-02-25,Monitor,Closed
+RR-029,B-0007,Temperature excursion,High,2025-11-03,Hold stock,Closed
+RR-030,B-0007,Missing documents,Medium,2026-02-17,Chase documents,Open

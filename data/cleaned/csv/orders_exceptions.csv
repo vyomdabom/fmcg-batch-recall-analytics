@@ -1,0 +1,4 @@
+order_id,customer_id,order_date,dispatch_date,product_id,batch_id,quantity_sold,sales_value,delivery_region,exception_reason
+O-00101,C-999,2025-03-14,2025-03-15,P-030,,48,107.04,Otago,orphan order: customer C-999 not in customers (violates fk_order_customer)
+O-00201,C-888,2026-02-19,2026-02-20,P-005,B-0233,24,119.28,Bay of Plenty,orphan order: customer C-888 not in customers (violates fk_order_customer)
+O-00501,C-036,2026-03-14,2026-03-10,P-028,B-0061,36,214.2,Otago,dispatch date before order date (violates chk_dispatch)
