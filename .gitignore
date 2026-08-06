@@ -32,6 +32,11 @@ env/
 .idea/
 *.swp
 
+# ---- R / RStudio ----
+.Rhistory
+.RData
+.Rproj.user/
+
 # ---- Credentials (never commit) ----
 .env
 *.pgpass
