@@ -1,0 +1,14 @@
+flowchart TD
+    A[Stock held in warehouse] --> B[Scheduled expiry report<br/>weekly]
+    B --> C[Already expired<br/>with stock on hand]
+    B --> D[Expiring within 30 days]
+    B --> E[Expiring within 31 to 90 days]
+    C --> F[Route for disposal<br/>and write off]
+    D --> G[Decide: markdown,<br/>redistribute or dispose]
+    E --> H[Planning input to<br/>ordering decisions]
+    H --> I[Adjust order quantity<br/>and frequency]
+    I --> A
+
+    style B fill:#c9e7ce,stroke:#2f7a45,stroke-width:1px,color:#12351d
+    style G fill:#c9e7ce,stroke:#2f7a45,stroke-width:1px,color:#12351d
+    style I fill:#c9e7ce,stroke:#2f7a45,stroke-width:1px,color:#12351d

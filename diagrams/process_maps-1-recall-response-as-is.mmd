@@ -1,0 +1,18 @@
+flowchart TD
+    A[Supplier recall notice received] --> B[Locate batch in stock spreadsheet<br/>~45 min]
+    B --> C[Open order history spreadsheets]
+    C --> D[Manually cross reference orders<br/>to find the batch<br/>~3 hours]
+    D --> E{Batch reference<br/>present on order?}
+    E -->|Yes| F[Add customer to affected list]
+    E -->|No| G[Judgement call:<br/>include or exclude?]
+    G --> H[Risk of missed customers]
+    F --> I[Look up each customer's<br/>contact details<br/>~1.5 hours]
+    H --> I
+    I --> J[Calculate value shipped<br/>and stock on hand<br/>~45 min]
+    J --> K[Search complaints log<br/>for related issues<br/>~30 min]
+    K --> L[Begin contacting customers<br/>T + 6.5 hours]
+
+    style D fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414
+    style G fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414
+    style H fill:#f8b4b4,stroke:#9b1c1c,stroke-width:1px,color:#5f1414
+    style L fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414

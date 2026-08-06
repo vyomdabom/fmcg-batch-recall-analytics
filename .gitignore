@@ -47,3 +47,6 @@ cv_wording.md
 
 # ---- Build artefacts ----
 *.zip
+
+# ---- PDF build cache ----
+.pdfbuild/

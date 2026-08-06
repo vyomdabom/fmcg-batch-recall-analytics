@@ -1,0 +1,15 @@
+flowchart TD
+    A[Delivery arrives] --> B[Check goods against<br/>purchase order]
+    B --> C[Enter batch details]
+    C --> D{Validation checks}
+    D -->|Manufacture date in future| E[Reject and prompt]
+    D -->|Manufacture date after expiry| E
+    D -->|Quantity zero or negative| E
+    D -->|Expiry date missing| E
+    D -->|Quantity outside expected range| F[Warn and require<br/>confirmation]
+    D -->|All checks pass| G[Record saved]
+    E --> C
+    F --> G
+
+    style D fill:#c9e7ce,stroke:#2f7a45,stroke-width:1px,color:#12351d
+    style G fill:#c9e7ce,stroke:#2f7a45,stroke-width:1px,color:#12351d

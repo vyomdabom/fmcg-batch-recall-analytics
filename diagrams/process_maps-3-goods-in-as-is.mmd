@@ -1,0 +1,11 @@
+flowchart TD
+    A[Delivery arrives] --> B[Check goods against<br/>purchase order]
+    B --> C[Enter batch details:<br/>batch number, quantities,<br/>manufacture and expiry dates]
+    C --> D[Record saved]
+    D --> E[No validation performed]
+    E --> F[Impossible values enter<br/>the system]
+    F --> G[Discovered later during<br/>ad hoc data checks, or never]
+
+    style E fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414
+    style F fill:#f8b4b4,stroke:#9b1c1c,stroke-width:1px,color:#5f1414
+    style G fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414

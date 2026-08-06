@@ -1,0 +1,13 @@
+flowchart TD
+    A[Stock held in warehouse] --> B[Time passes]
+    B --> C[Periodic physical stock count]
+    C --> D{Expired stock<br/>found?}
+    D -->|Yes| E[Raise write off]
+    D -->|No| B
+    E --> F[Loss recognised<br/>long after it occurred]
+    B --> G[No forward view of<br/>approaching expiry]
+    G --> H[No opportunity to<br/>discount or redistribute]
+
+    style G fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414
+    style H fill:#f8b4b4,stroke:#9b1c1c,stroke-width:1px,color:#5f1414
+    style F fill:#fbd5d5,stroke:#c81e1e,stroke-width:1px,color:#5f1414
