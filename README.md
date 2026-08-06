@@ -85,11 +85,12 @@ Five-page Power BI report. Full-size images in [`powerbi/screenshots/`](powerbi/
 ├── final_insights_report.md       Final 15-page insights report
 │
 ├── ba-documents/                  BA document pack, numbered in reading order
-│   ├── 02_stakeholder_map.md
-│   ├── 03_discovery_questions.md
-│   ├── 05_business_requirements.md
-│   ├── 07_acceptance_criteria.md
-│   ├── 08_assumptions_risks_constraints.md
+│   ├── 01_stakeholder_map.md
+│   ├── 02_discovery_questions.md
+│   ├── 03_business_requirements.md
+│   ├── 04_user_stories.md
+│   ├── 05_acceptance_criteria.md
+│   ├── 06_assumptions_risks_constraints.md
 │   ├── erd.dbml                   Entity relationship model (dbdiagram.io)
 │   └── erd_diagram.png
 │

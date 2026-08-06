@@ -70,4 +70,4 @@ Each observed symptom points to an underlying business or data problem:
 | 9 | Stocktake found chilled product within 2 weeks of expiry that nobody had flagged | Financial loss from write-offs; risk of short-dated stock reaching customers |
 | 10 | Two suppliers' audit certificates were found to have expired months ago | Supplier onboarding/review is not systematic; quality risk enters unchecked |
 
-Your discovery interviews (see `ba-documents/03_discovery_questions.md`) should confirm, refine, and extend this list.
+Your discovery interviews (see `ba-documents/02_discovery_questions.md`) should confirm, refine, and extend this list.

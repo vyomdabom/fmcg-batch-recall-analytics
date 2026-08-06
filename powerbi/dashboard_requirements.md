@@ -39,4 +39,4 @@
 
 ## Acceptance (tie back to user stories)
 
-Each page should satisfy the relevant acceptance criteria in `ba-documents/07_acceptance_criteria.md`. Screenshot every finished page into `powerbi/screenshots/` for the README.
+Each page should satisfy the relevant acceptance criteria in `ba-documents/05_acceptance_criteria.md`. Screenshot every finished page into `powerbi/screenshots/` for the README.
