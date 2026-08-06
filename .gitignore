@@ -36,3 +36,6 @@ env/
 .env
 *.pgpass
 secrets.*
+
+# ---- Personal career material (kept locally, never published) ----
+cv_wording.md
