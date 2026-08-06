@@ -1,0 +1,12 @@
+# GitHub language statistics
+#
+# Linguist classifies SQL as a "data" language, and the repository language
+# bar only counts languages typed as programming or markup. Without the
+# override below, the SQL that carries this project is excluded from the
+# stats entirely and the repo reads as 100% Python off the back of a single
+# data-generation script.
+*.sql linguist-detectable=true
+*.sql linguist-language=SQL
+
+# Treat the generated/source data as data, not code, so it never skews stats.
+*.csv linguist-generated=true
