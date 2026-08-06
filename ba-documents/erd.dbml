@@ -141,5 +141,6 @@ Ref: supplier_documents.supplier_id > suppliers.supplier_id
 Ref: recall_risk.batch_id > batches.batch_id
 
 // Exceptions tables deliberately have no Refs — they hold quarantined rows
-// (see import_log.md). TODO (yours): add a Note block to each exceptions
-// table explaining the quarantine policy in your own words.
+// (see import_log.md). Records that fail a referential, range or date check
+// are moved here rather than deleted, so nothing is silently lost, every
+// exclusion carries a stated reason, and any decision can be reversed.

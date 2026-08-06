@@ -3,7 +3,7 @@
    Task ref: sql_tasks.md C7–C13
    ============================================================ */
 
--- TODO C7:  batches expiring within 30/60/90 days
+-- C7:  batches expiring within 30/60/90 days
 WITH expiring AS (
    SELECT batch_id, product_id, quantity_remaining, warehouse_location,
           expiry_date, expiry_date - CURRENT_DATE AS days_to_expiry
@@ -24,7 +24,7 @@ ORDER BY days_to_expiry; -- 59 rows ordered from critical to low
 
 
 
--- TODO C8:  stock value at risk per window / product
+-- C8:  stock value at risk per window / product
 WITH expiring as(
    SELECT batch_id, batches.product_id, quantity_remaining, warehouse_location, expiry_date, product_name,expiry_date - CURRENT_DATE AS days_to_expiry, unit_cost
    FROM batches
@@ -48,7 +48,7 @@ Select expiry_status, count(*) AS batch_count, round(sum(quantity_remaining * un
 FROM classified
 GROUP BY expiry_status;
 
--- TODO C9:  batches with missing or expired supplier documents
+-- C9:  batches with missing or expired supplier documents
 With CTE_clipboard AS (
    Select suppliers.supplier_id, doc_types.document_type
    FROM suppliers
@@ -68,7 +68,7 @@ ORDER BY supplier_id, batch_id;
 -- Caveat: assumes all 5 doc types required per supplier — confirm with Quality.
 
 
--- TODO C10: complaint rate per 1,000 units sold, by product
+-- C10: complaint rate per 1,000 units sold, by product
 
 WITH CTE_sales AS(
    SELECT product_id, SUM(quantity_sold) as units_sold
@@ -96,7 +96,7 @@ ORDER BY complaints_per_1000 DESC;
 -- Excludes 5 complaints with no product_id (unattributable).
 
 
--- TODO C11: supplier issue count (QC fails + complaints + recall risks)
+-- C11: supplier issue count (QC fails + complaints + recall risks)
 WITH CTE_supplier_issue AS (
    SELECT supplier_id, 'Failed QC' as issue_type
    From batches
@@ -138,7 +138,7 @@ ORDER BY Total_issues DESC;
 --   * 'In progress' recall risks counted as open (alongside 'Open').
 --   * Orphan recall risk RR-006 (batch B-9999) dropped — no supplier to attribute.
 
--- TODO C12: top 10 high-risk batches (document your scoring weights here)
+-- C12: top 10 high-risk batches
 -- C12 scoring weights:
 --   open recall risk = 5 (why: someone already judged this batch dangerous. Potentally hazardous for customer)
 --   expired          = 4 (why: still on habd so can immediatly pull off shelf. Costly)
@@ -176,7 +176,7 @@ LIMIT 10;
 -- This shows the internal risk model would miss an incoming recall — argues for a
 -- process to log supplier notifications promptly.
 
--- TODO C13: avg resolution days by severity / category
+-- C13: avg resolution days by severity / category
 SELECT severity, complaint_type, ROUND(AVG(resolution_days), 1) as avg_resolution_days, Count(*) as complaint_type
 FROM complaints
 where resolution_days >= 0

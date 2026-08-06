@@ -20,7 +20,7 @@ The recommendations follow directly: make the batch identifier mandatory at orde
 
 ## 2. Data quality findings
 
-I ran a systematic check across all eight datasets, covering three categories: orphan checks (records referencing a parent that doesn't exist), impossible value checks (figures that cannot be true, such as negative quantities), and completeness checks (critical fields left blank). Rather than deleting problem records, I moved them into separate exceptions tables. Nothing was silently lost, every exclusion is documented, and every decision is reversible. Queries supporting this section are B4 to B6 in `sql/cleaning_queries.sql`.
+I ran a systematic check across all eight datasets, covering three categories: orphan checks (records referencing a parent that doesn't exist), impossible value checks (figures that cannot be true, such as negative quantities), and completeness checks (critical fields left blank). Rather than deleting problem records, I moved them into separate exceptions tables. Nothing was silently lost, every exclusion is documented, and every decision is reversible. Queries supporting this section are [B4](sql/cleaning_queries.sql#L29), [B5](sql/cleaning_queries.sql#L96) and [B6](sql/cleaning_queries.sql#L115) in [`sql/cleaning_queries.sql`](sql/cleaning_queries.sql).
 
 **Broken batch linkage is the most serious issue.** Of 1,796 orders, 316 (17.6%) have no batch ID recorded. Of 100 complaints, 46 (46%) have no batch ID, and a further 5 have no product ID. The consequence is direct. When nearly half of all complaints cannot be tied back to a batch, FreshRoute cannot connect a customer's problem to the product that caused it, and cannot work in the opposite direction either, tracing from a suspect batch out to the customers who received it. This single gap is the root cause of the 6.5 hours the last recall took to complete.
 
@@ -36,7 +36,7 @@ The most telling pattern here is the future dated manufacture records. Because t
 
 ## 3. Expiry & stock risk
 
-Sixty batches with stock still on hand are either expired or will expire within 90 days, representing $37,963.28 of stock value. All figures in this section are as at 31 July 2026 and exclude batch B-0026, whose recorded quantity of 48,000 units is a confirmed data error (see Section 2). Queries supporting this section are C7 and C8 in `sql/analysis_queries.sql`.
+Sixty batches with stock still on hand are either expired or will expire within 90 days, representing $37,963.28 of stock value. All figures in this section are as at 31 July 2026 and exclude batch B-0026, whose recorded quantity of 48,000 units is a confirmed data error (see Section 2). Queries supporting this section are [C7](sql/analysis_queries.sql#L6) and [C8](sql/analysis_queries.sql#L27) in [`sql/analysis_queries.sql`](sql/analysis_queries.sql).
 
 **Exposure by expiry window.**
 
@@ -98,7 +98,7 @@ Four of the eight highest exposure locations sit in the C2 aisle, together accou
 
 ## 4. Supplier quality
 
-FreshRoute sources from 14 suppliers. Across the portfolio there are 38 expired supplier documents and 10 batches that failed quality control. Supplier attribution coverage sits at 54%, meaning nearly half of all quality signals cannot be traced back to the supplier responsible. Queries supporting this section are C9 to C11 in `sql/analysis_queries.sql`.
+FreshRoute sources from 14 suppliers. Across the portfolio there are 38 expired supplier documents and 10 batches that failed quality control. Supplier attribution coverage sits at 54%, meaning nearly half of all quality signals cannot be traced back to the supplier responsible. Queries supporting this section are [C9](sql/analysis_queries.sql#L51), [C10](sql/analysis_queries.sql#L71) and [C11](sql/analysis_queries.sql#L99) in [`sql/analysis_queries.sql`](sql/analysis_queries.sql).
 
 **Suppliers by total quality issues.** Ranking suppliers by combined failed QC checks, batch linked complaints and open recall risks:
 
@@ -133,7 +133,7 @@ All of these counts are a floor rather than a full tally, because 46% of complai
 
 ## 5. Complaints
 
-FreshRoute recorded 100 complaints across the period, of which 28 remain open. Average resolution time is 11.43 days. Queries supporting this section are C10 and C13 in `sql/analysis_queries.sql`.
+FreshRoute recorded 100 complaints across the period, of which 28 remain open. Average resolution time is 11.43 days. Queries supporting this section are [C10](sql/analysis_queries.sql#L71) and [C13](sql/analysis_queries.sql#L179) in [`sql/analysis_queries.sql`](sql/analysis_queries.sql).
 
 **Which products attract complaints.** Raw counts are broadly flat, with Almond Butter 250g, Butter 500g, Granola 450g and Protein Bites 120g each recording five complaints. Raw counts are misleading, however, because they reward low volume products. Normalised per 1,000 units sold the ranking changes materially:
 
@@ -161,7 +161,7 @@ Rate rather than volume is the fairer basis for comparison, and Nut Bar Almond 4
 
 ## 6. Recall test: Batch YD-2408-A briefing
 
-**Situation.** Meadow Valley Dairy Ltd issued a recall notification for batch YD-2408-A, internal reference B-0187, Yoghurt Drink 250ml, expiring 7 August 2026. The queries supporting this trace are in `sql/recall_traceability_query.sql`.
+**Situation.** Meadow Valley Dairy Ltd issued a recall notification for batch YD-2408-A, internal reference B-0187, Yoghurt Drink 250ml, expiring 7 August 2026. The queries supporting this trace are [D14](sql/recall_traceability_query.sql#L24) and [D15](sql/recall_traceability_query.sql#L87) in [`sql/recall_traceability_query.sql`](sql/recall_traceability_query.sql).
 
 **Distribution.** The batch reached 18 customers across 22 orders, totalling 534 units dispatched. Six regions are affected:
 

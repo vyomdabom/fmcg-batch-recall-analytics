@@ -3,7 +3,7 @@
    Task ref: sql_tasks.md B3–B6
    ============================================================ */
 
--- TODO B3: row counts per table vs raw
+-- B3: row counts per table vs raw
 SELECT 'products' AS table_name, COUNT(*) AS row_count FROM products
 UNION ALL
 SELECT 'suppliers', COUNT(*) FROM suppliers
@@ -26,7 +26,7 @@ SELECT 'orders exceptions', COUNT(*) FROM orders_exceptions
 UNION ALL
 SELECT 'recall risk exceptions', COUNT(*) FROM recall_risk_exceptions;
 
--- TODO B4: orphan checks (orders → batches/customers, complaints → FKs)
+-- B4: orphan checks (orders → batches/customers, complaints → FKs)
 SELECT orders.order_id -- No Data (good)
 from orders
 Left JOIN batches ON orders.batch_id = batches.batch_id
@@ -93,7 +93,7 @@ WHERE customers.customer_id IS NULL;
 -- 46 null in the complaints table for batch_id
 -- positive control returned the 2 known orphan orders (O-00101, O-00201) — detector verified
 
--- TODO B5: impossible values (negative qty, remaining > received, dispatch_date < order_date, manufacture_date > expiry_date)
+-- B5: impossible values (negative qty, remaining > received, dispatch_date < order_date, manufacture_date > expiry_date)
 
 SELECT * FROM batches where quantity_received < quantity_remaining; -- 5 rows show that there are more batches remaining than quantity recieved
 SELECT * FROM batches where quantity_received < 0 ; -- Batch B-0011 has a negitive quantity recieved (-120).
@@ -112,7 +112,7 @@ SELECT * FROM batches where manufacture_date > DATE '2026-07-31';
 -- input validation at receiving.
 Select * FROM batches Where expiry_date <= DATE '2026-07-31' AND quantity_remaining > 0;
 
--- TODO B6: data-quality summary (% orders / complaints missing batch_id)
+-- B6: data-quality summary (% orders / complaints missing batch_id)
 
 SELECT 'orders.batch_id' AS column_checked,
        COUNT(*) - COUNT(batch_id) AS missing,

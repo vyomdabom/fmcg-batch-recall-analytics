@@ -21,7 +21,7 @@
 --   traceability gap this whole project exposes.
 -- ============================================================
 
--- TODO D14: for a parameterised batch_number return:
+-- D14: for a parameterised batch_number return:
 --   1) batch, product, supplier details
 
 --   2) stock remaining + warehouse location -- 152 remaining at C2-A4 warehouse
@@ -77,11 +77,11 @@ LEFT JOIN batches b ON b.batch_id = o.batch_id
 Where b.batch_number = 'YD-2408-A';
 
 --One-line purpose: "Full recall trace for batch YD-2408-A (B-0187), Yoghurt Drink 250ml, supplier Meadow Valley Dairy — the query set FreshRoute would run on receiving a recall notice."
---Who's affected: 18 customers across 22 orders (your Query 2 count), spanning Auckland, Bay of Plenty, Canterbury, Otago, Waikato, Wellington.
+--Who's affected: 18 customers across 22 orders (Query 2 count), spanning Auckland, Bay of Plenty, Canterbury, Otago, Waikato, Wellington.
 --Financial exposure: $3,708.67 total — $3,205.55 shipped, $503.12 on-hand. Broken out, as you have it.
 --The early-warning nuance: CMP-099, an open Taste/Quality complaint on this batch from July 6, predates the recall notice.
 --The gap that matters operationally: C-016 (Addington Espresso Bar) received the batch but has a NULL contact_person — a customer you can't phone.
 --The caveat (the project's through-line): this trace only catches orders/complaints with batch_id filled in. With 17.6% of orders and 46% of complaints missing batch linkage, real exposure is a floor, not a ceiling — which is itself the strongest argument for fixing batch capture at point of sale.
 
 
--- TODO D15 (bonus): widened trace — all batches of same product+supplier in a date window
+-- D15 (bonus): widened trace — all batches of same product+supplier in a date window
