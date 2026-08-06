@@ -44,3 +44,6 @@ secrets.*
 
 # ---- Personal career material (kept locally, never published) ----
 cv_wording.md
+
+# ---- Build artefacts ----
+*.zip
